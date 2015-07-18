@@ -4,10 +4,19 @@ Simple development environment for Vagrant used in [Harad](http://harad.mx).
 
 **Table of Contents**
 
+- [Requirements](#require)
 - [Quickstart](#quickstart)
 - [License](#license)
 
+
+## <a name="require">Requirements</a>
+
+1. You must have installed (Vagrant)[http://www.vagrantup.com/downloads.html]
+2. And (VirtualBox)[https://www.virtualbox.org/wiki/Downloads]
+
 ## <a name="quickstart"></a>Quickstart
+
+First at all clone our vagrant repository:
 
 ``` bash
 $> mkdir harad
