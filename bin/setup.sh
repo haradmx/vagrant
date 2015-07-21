@@ -3,3 +3,5 @@
 sed -i 's/^mesg n$/tty -s \&\& mesg n/g' /root/.profile
 apt-get update
 apt-get upgrade -y
+apt-get install mercurial mercurial-git -y
+
