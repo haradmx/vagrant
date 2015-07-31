@@ -18,5 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-set-threshold", 10000 ]
     vb.memory = 1024
     vb.cpus = 2
+    vb.gui = true
   end
 end
