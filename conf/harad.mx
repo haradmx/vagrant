@@ -18,11 +18,28 @@ server {
 
 server {
   server_name api.local.harad.mx;
-#  root /var/www/public/nubleer-frontend/;
   location / {
 #    include global/cors.conf;
     proxy_pass http://localhost:9000;
     proxy_set_header Host      $host;
     proxy_set_header X-Real-IP $remote_addr;
   }
+}
+
+server {
+        root /var/www/docs/htdocs;
+        index index.html index.htm index.php;
+
+        server_name docs.local.harad.mx;
+
+        access_log /var/www/docs/log/access.log;
+        error_log /var/www/docs/log/error.log;
+
+        error_page 404 /404.html;
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+              root /usr/share/nginx/www;
+        }
+        include global/drop.conf;
 }
