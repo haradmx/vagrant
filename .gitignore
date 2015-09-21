@@ -1,6 +1,2 @@
 .vagrant/
 *.box
-harapp/
-app/
-web/
-docs/
