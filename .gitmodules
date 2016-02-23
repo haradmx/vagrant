@@ -1,9 +1,0 @@
-[submodule "app"]
-	path = app
-	url = git@bitbucket.org:ivan-iver/harapp.git
-[submodule "web"]
-	path = web
-	url = git@bitbucket.org:ivan-iver/haradweb.git
-[submodule "docs"]
-	path = docs
-	url = git@bitbucket.org:ivan-iver/haradocs.git
